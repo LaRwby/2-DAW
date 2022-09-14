@@ -1,0 +1,18 @@
+Marcos - Dessarrollo de web en Entorno Servidor
+	ma.villagordocaste@edu.gva.es
+	actitud - 10%
+	Examen - 40%
+	Practicas 
+		Practicas - 20% 
+		Supuesto Practico - 30%
+
+Yosune - Desarrollo aplicaciones web
+	Ejercicios practicos - 60%
+	Examenes - 10%
+	Asistencia - 10%
+
+Antonio Roig - Desarrollo entorno cliente
+	a.roighernandez@edu.gva.es
+	Practicas - 60%
+	Examenes - 40%
+ 
