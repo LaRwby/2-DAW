@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cabecera.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Empleados.aspx" />
+    <Content Include="HojaEstilo.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -77,6 +80,20 @@
     </Compile>
     <Compile Include="Cabecera.ascx.designer.cs">
       <DependentUpon>Cabecera.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.aspx.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Empleados.aspx.designer.cs">
+      <DependentUpon>Empleados.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

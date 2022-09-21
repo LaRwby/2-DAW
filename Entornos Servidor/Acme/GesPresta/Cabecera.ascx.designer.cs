@@ -15,13 +15,13 @@ namespace GesPresta
     {
 
         /// <summary>
-        /// Control LinkButton1.
+        /// Control LinkButton4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
 
         /// <summary>
         /// Control LinkButton2.

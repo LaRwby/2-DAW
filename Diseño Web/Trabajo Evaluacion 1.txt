@@ -1,0 +1,10 @@
+academia nombre _____
+Clases de repaso 
+	- ESO (1-4)
+	-Bachillerato (1-2)
+	-Ciclos informatica (Prueba de acceso, Superior)
+	-Universidad
+    -- Castellano / Ingles
+Contacto 
+	-Telefono
+	- Dirección

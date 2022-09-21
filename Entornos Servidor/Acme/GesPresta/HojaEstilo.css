@@ -1,0 +1,26 @@
+﻿body {
+}
+div {
+    font-size: 12pt;
+    text-align: center;
+    padding: initial;
+    margin: auto;
+}
+
+.Cabezera {
+    font-size: 20pt;
+    font-family: 'Lucida Sans';
+}
+
+#link {
+    margin-bottom: 15pt;
+}
+
+.Cabezera2 {
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    border-bottom: 1.5pt solid
+}
+.texto {
+    text-align: left;
+}
