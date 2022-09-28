@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio6-3b</title>
+	<link rel="stylesheet" type="text/css" href="tabla.css">
+</head>
+<body>
+	<h1 id="titulo">INDUSTRIAS ACME.FORMULARIO DE PEDIDIDO</h1>
+<form>
+	<div class="tablagen">
+        <div class="fila"> 
+            <div class="title" class="text" class="col"> Datos del Cliente: </div>
+        </div>
+		<div class="fila">
+		  <div class="text" class="col" class="text">Nombre</div>
+		  <div class="col" class="text"><input type="text" name="name" size="40"></div>
+		</div>
+		<div class="fila">
+		  <div class="text" class="col">Correo electronico</div>
+		  <div class="col"><input type="text" name="mail" size="30"></div>
+		</div>
+		<div class="fila">
+		    <div class="text" class="col">Tipo de cliente:</div>
+		    <div class="col">
+                    <input type="radio" name="typeclient" checked> Particular
+                    <br />
+                    <input type="radio" name="typeclient"> Asociacion
+                    <br/>
+                    <input type="radio" name="typeclient"> Empresa</div>
+		</div>
+        <div class="fila">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="fila">
+            <div class="title" class="text" class="col">Datos de los productos:</div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Productos Solicitados:</div>
+            <div class="col"><select name="elegir" multiple size="5">
+
+                    <option value="1" selected>AR001 Oro Reluciente</option>
+
+                    <option value="2">AR002 Plata Pulida</option>
+
+                    <option value="3">AR003 Bronce Reforzado</option>
+
+                    <option value="4" selected>EX001 Escudo</option>
+
+                    <option value="5">EX002 Invisibilidad</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="fila">
+            <div class="title" class="text" class="col">Datos del envio:</div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Direccion:</div>
+            <div class="col"><input type="text" name="direcc" size="40"></div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Ciudad:</div>
+            <div class="col"><input type="text" name="ciudad" size="20"></div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Codigo postal:</div>
+            <div class="col"><input type="text" name="ciudad" size="10"></div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Datos bancarios:</div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Nombre de la entidad:</div>
+            <div class="col"><input type="text" name="nombre_ent" size="35"></div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Numero de Cuenta:</div>
+            <div class="col"><input type="text" name="ciudad" size="20"></div>
+        </div>
+        <div class="fila">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="fila">
+            <div class="title" class="text" class="col">Otra informacion del pedido:</div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Comentarios:</div>
+            <div class="col"><textarea cols="40" rows="5">Escriba aqui sus comentarios...</textarea> </div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col">Acepto recibir informacion publicitaria:</div>
+            <div class="col"><input type="checkbox" name="aceptar" checked></div>
+        </div>
+        <div class="fila">
+            <div class="text" class="col"><input type="submit" value="Enviar Pedido"></div>
+            <div class="col"><input type="reset" value="Cancelar"></div>
+        </div>
+
+	  </div>
+</form>
+</body>
+</html>
+
+
