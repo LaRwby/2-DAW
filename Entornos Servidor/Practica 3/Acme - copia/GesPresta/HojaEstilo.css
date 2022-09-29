@@ -1,13 +1,9 @@
 ﻿body {
 }
-div {
-    font-size: 12pt;
-    text-align: center;
-    padding: initial;
-    margin: auto;
-}
-
 .Cabezera {
+    text-align:center
+}
+.Titulo {
     font-size: 20pt;
     font-family: 'Lucida Sans';
 }
@@ -16,7 +12,7 @@ div {
     margin-bottom: 15pt;
 }
 
-.Cabezera2 {
+.Titulo2 {
     font-family: 'Lucida Sans';
     font-size: 10pt;
     border-bottom: 1.5pt solid
@@ -25,9 +21,13 @@ div {
     text-align: left;
 }
 
-
+.Contenido{
+    margin:auto;
+    border:5px solid red;
+}
 .tablagen {
     display: table;
+    margin:auto;
 }
 
 .fila {
@@ -45,14 +45,29 @@ div {
     color: black;
     text-align: left;
 }
-.etiqueta{
-    text-align:center;
+.seccion {
+    display: table;
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top:20px;
 }
-div.formato{
-    float:left;
-    width:48%;
+.celdas {
+    display:table-cell;
 }
-div.formato2 {
-    float: right;
-    width: 48%;
+#Uno, #Tres {
+    display: table-cell;
+    width:10%;
+    text-align: right;
+    padding-right:10px;
+}
+#Dos, #Cuatro {
+    display: table-cell;
+    width: 15%;
+}
+#Cinco {
+    display: table-cell;
+    width: 15%;
+    text-align: left;
 }
