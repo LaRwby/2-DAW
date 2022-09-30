@@ -20,6 +20,7 @@
         <div>
             <uc1:Cabecera ID="Cabecera1" runat="server" />
         </div>
+        <div class="Titulo3">DATOS DE LOS EMPLEADOS</div>
         <div class="Contenido">
              <div class="tablagen">
                  <div class="fila">
@@ -47,14 +48,6 @@
                         <div class="col2"><asp:TextBox ID="txtTelEmp" runat="server" Width="410px"></asp:TextBox></div>
                  </div>
                  <div class="fila">
-                        <div class="col">Fecha de Nacimiento :</div>
-                        <div class="col2"><asp:TextBox ID="txtFnaEmp" runat="server" Width="275px"></asp:TextBox></div>
-                 </div>
-                 <div class="fila">
-                        <div class="col">Fecha de Ingreso :</div>
-                        <div class="col2"><asp:TextBox ID="txtFinEmp" runat="server"></asp:TextBox></div>
-                 </div>
-                 <div class="fila">
                         <div class="col">Sexo :</div>
                         <div class="col2">
                             <asp:RadioButtonList ID="rblSexEmp" runat="server" RepeatDirection="Horizontal">
@@ -74,25 +67,32 @@
                                 </asp:DropDownList>
                  </div>
                  </div>
-                 <div class="fila">
-                       <div class="col"></div>  
-                       <div class="col2"><asp:Button ID="cmdEnviar" runat="server" Text="Enviar" /></div>
-                 </div>
+                 
                  </div>
            
                  <div class="seccion">
                      <div class="celdas" id="Uno">Fecha de Nacimiento
-                            &nbsp;<asp:TextBox ID="TextBox1" runat="server" style="margin-left: 20px" Width="115px"></asp:TextBox>
+                            &nbsp;<asp:TextBox ID="TxtNacEmp" runat="server" style="margin-left: 20px" Width="115px" OnTextChanged="TxtNacEmp_TextChanged"></asp:TextBox>
                      </div>
-                     <div class="celdas" id="Dos"><asp:Calendar ID="Calendar1" runat="server"></asp:Calendar></div>
-                     <div class="celdas" id="Tres">Fecha de Nacimiento
-                            &nbsp;<asp:TextBox ID="TextBox2" runat="server" style="margin-left: 20px"></asp:TextBox>
+                     <div class="celdas" id="Dos"><asp:Calendar ID="CalNacEmp" runat="server" OnSelectionChanged="Calendar1_SelectionChanged"></asp:Calendar></div>
+                     <div class="celdas" id="Tres">Fecha de Ingreso
+                            &nbsp;<asp:TextBox ID="TxtIngEmp" runat="server" style="margin-left: 20px" OnTextChanged="TxtIngEmp_TextChanged"></asp:TextBox>
                      </div>
-                     <div class="celdas" id="Cuatro"><asp:Calendar ID="Calendar2" runat="server"></asp:Calendar></div>
+                     <div class="celdas" id="Cuatro"><asp:Calendar ID="CalIngEmp" runat="server" OnSelectionChanged="Calendar2_SelectionChanged"></asp:Calendar></div>
                      <div class="celdas" id="Cinco">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antigüedad: &nbsp;
-                         &nbsp;<asp:TextBox ID="TextBox3" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;&nbsp;Años <asp:TextBox ID="TextBox4" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;Meses <asp:TextBox ID="TextBox5" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;Dias
+                         &nbsp;<asp:TextBox ID="TxtAño" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;&nbsp;Años <asp:TextBox ID="TxtMes" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;Meses <asp:TextBox ID="TxtDia" runat="server" style="margin-left: 20px" Width="75px"></asp:TextBox>   &nbsp;Dias
                      </div>
+                     
                  </div>
+            <div class="Boton">
+                <asp:Label ID="lblError1" runat="server" Text="Label" Visible="False"></asp:Label>
+                <br />
+                <asp:Label ID="lblError2" runat="server" Text="Label" Visible="False"></asp:Label>
+                <br />
+                <asp:Label ID="lblError3" runat="server" Text="Label" Visible="False"></asp:Label>
+                <br />
+                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
+            </div>
          </div>
     </form>
 

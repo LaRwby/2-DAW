@@ -23,7 +23,10 @@
 
 .Contenido{
     margin:auto;
-    border:5px solid red;
+    border:2px solid red;
+    margin-top:5px;
+    margin-right:5%;
+    margin-left:5%;
 }
 .tablagen {
     display: table;
@@ -50,7 +53,6 @@
     height: 150px;
     width: 70%;
     margin: auto;
-    margin-bottom: 5%;
     margin-top:20px;
 }
 .celdas {
@@ -70,4 +72,14 @@
     display: table-cell;
     width: 15%;
     text-align: left;
+}
+.Boton{
+    text-align:center;
+    margin:auto;
+    margin-bottom:2%;
+}
+.Titulo3{
+    font-size:15pt;
+    text-align:center;
+    margin-top:15px;
 }
