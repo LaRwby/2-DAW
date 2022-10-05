@@ -85,13 +85,15 @@
                      
                  </div>
             <div class="Boton">
+                <asp:Label ID="lblValores" runat="server" Width="45%" Visible="False" BackColor="#66FFFF"></asp:Label>
+                <br />
                 <asp:Label ID="lblError1" runat="server" Text="Label" Visible="False"></asp:Label>
                 <br />
                 <asp:Label ID="lblError2" runat="server" Text="Label" Visible="False"></asp:Label>
                 <br />
                 <asp:Label ID="lblError3" runat="server" Text="Label" Visible="False"></asp:Label>
                 <br />
-                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
+                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" OnClick="cmdEnviar_Click" />
             </div>
          </div>
     </form>

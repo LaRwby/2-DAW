@@ -30,6 +30,8 @@ namespace GesPresta
             string FechaNac = CalNacEmp.SelectedDate.ToShortDateString();
             string FechaIng = CalIngEmp.SelectedDate.ToShortDateString();
             TxtNacEmp.Text = FechaNac;
+            TxtIngEmp.Text = FechaIng;
+            
         }
 
         protected void Calendar2_SelectionChanged(object sender, EventArgs e)
@@ -50,48 +52,58 @@ namespace GesPresta
         }
         public bool ValidarFecha(string fechaNac , string fechaIng)
         {
-            //////////////////////////////////////////////////////////
-            bool fechaValida = true;
+           
+            bool fechaValida1, fechaValida2, fechaValida3, fechasValidas = false;
             DateTime FechaNac = Convert.ToDateTime(fechaNac).Date;
             DateTime FechaIng = Convert.ToDateTime(fechaIng).Date;
             DateTime dtHoy = System.DateTime.Now;
 
-            if (FechaIng < FechaNac)
+            if (FechaNac > FechaIng)
             {
                 lblError1.Visible = true;
-                lblError1.Text = "La Fecha de ingreso en menos a la fecha de Nacimiento";
-                fechaValida = false;
+                lblError1.Text = "Error: La Fecha de ingreso en menos a la fecha de Nacimiento";
+                TxtAño.Text = "";
+                TxtMes.Text = "";
+                TxtDia.Text = "";
+                fechaValida1 = false;
             }
             else
             {
                 lblError1.Visible = false;
-                fechaValida = true;
+                fechaValida1 = true;
             }
             if (FechaIng > dtHoy)
             {
                 lblError2.Visible = true;
-                lblError2.Text = "la Fecha de ingreso es mayor a la fecha de Hoy";
-                fechaValida = false;
+                TxtAño.Text = "";
+                TxtMes.Text = "";
+                TxtDia.Text = "";
+                lblError2.Text = "Error: la Fecha de ingreso es mayor a la fecha de Hoy";
+                fechaValida2 = false;
             }
             else
             {
                 lblError2.Visible = false;
-                fechaValida = true;
+                fechaValida2 = true;
             }
             if (FechaNac > dtHoy)
             {
                 lblError3.Visible = true;
-                lblError3.Text = "la fecha de Nacimiento es mayor a la fecha de Hoy";
-                fechaValida = false;
+                lblError3.Text = "Error: la fecha de Nacimiento es mayor a la fecha de Hoy";
+                fechaValida3 = false;
             }
             else
             {
                 lblError3.Visible = false;
-                fechaValida = true;
+                fechaValida3 = true;
+            }
+            if (fechaValida1 && fechaValida2 && fechaValida3)
+            {
+                fechasValidas = true;
             }
             
-            return fechaValida;
-            ///////////////////////////////////////////////////////
+            return fechasValidas;
+           
         }
 
         protected void TxtIngEmp_TextChanged(object sender, EventArgs e)
@@ -119,6 +131,27 @@ namespace GesPresta
             CalNacEmp.VisibleDate = Convert.ToDateTime(TxtNacEmp.Text);
             string FechaNac = CalNacEmp.SelectedDate.ToShortDateString();
             string FechaIng = CalIngEmp.SelectedDate.ToShortDateString();
+            if (TxtNacEmp.Text != "")
+            {
+                ValidarFecha(FechaNac, FechaIng);
+            }
+            
+        }
+
+        protected void cmdEnviar_Click(object sender, EventArgs e)
+        {
+                lblValores.Visible = true;
+                lblValores.Text = "VALORES DEL FORMULARIO" +
+                "<br/> Código Empleado: " + txtCodEmp.Text +
+                "<br/> NIF: " + txtNifEmp.Text +
+                "<br/> Apellidos y Nombre: " + txtNomEmp.Text +
+                "<br/> Dirección: " + txtDirEmp.Text +
+                "<br/> Ciudad: " + txtCiuEmp.Text +
+                "<br/> Teléfonos: " + txtTelEmp.Text +
+                "<br/> Fecha de Nacimiento: " + TxtNacEmp.Text +
+                "<br/> Fecha de Incorporación: " + TxtIngEmp.Text +
+                "<br/> Sexo: " + rblSexEmp.SelectedItem.Value +
+                "<br/> Departamento: " + ddlDepEmp.Text;
         }
     }
 }
