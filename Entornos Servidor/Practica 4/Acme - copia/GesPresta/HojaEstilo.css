@@ -1,0 +1,85 @@
+﻿body {
+}
+.Cabezera {
+    text-align:center
+}
+.Titulo {
+    font-size: 20pt;
+    font-family: 'Lucida Sans';
+}
+
+#link {
+    margin-bottom: 15pt;
+}
+
+.Titulo2 {
+    font-family: 'Lucida Sans';
+    font-size: 10pt;
+    border-bottom: 1.5pt solid
+}
+.texto {
+    text-align: left;
+}
+
+.Contenido{
+    margin:auto;
+    border:2px solid red;
+    margin-top:5px;
+    margin-right:5%;
+    margin-left:5%;
+}
+.tablagen {
+    display: table;
+    margin:auto;
+}
+
+.fila {
+    display: table-row;
+}
+
+.col {
+    display: table-cell;
+    padding: 5px;
+    text-align: right;
+}
+.col2 {
+    display: table-cell;
+    padding: 5px;
+    color: black;
+    text-align: left;
+}
+.seccion {
+    display: table;
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    margin-top:20px;
+}
+.celdas {
+    display:table-cell;
+}
+#Uno, #Tres {
+    display: table-cell;
+    width:10%;
+    text-align: right;
+    padding-right:10px;
+}
+#Dos, #Cuatro {
+    display: table-cell;
+    width: 15%;
+}
+#Cinco {
+    display: table-cell;
+    width: 15%;
+    text-align: left;
+}
+.Boton{
+    text-align:center;
+    margin:auto;
+    margin-bottom:2%;
+}
+.Titulo3{
+    font-size:15pt;
+    text-align:center;
+    margin-top:15px;
+}

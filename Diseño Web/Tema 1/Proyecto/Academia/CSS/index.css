@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	background-color: #FAF0E6;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #FFE4E1;
+	min-height: 125px;
+	align-items: center;
+}
+.logo img{
+	height: 100px;
+}
+header h1{
+	display: flex;
+	margin: auto;
+}
+.idiomas a{
+
+	padding-right: 10px;
+	font-weight: 600;
+	text-decoration: none;
+	color: black;
+}
+
+.idiomas a:hover{
+	color: #F0FFFF;
+}
+@media (max-width: 1000px){
+	header {
+		flex-direction: column;
+	}
+	.idiomas{
+		padding: 10px 0px;
+	}
+}
+
+
+.slider{
+	width: 60%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+
+	animation: transicion 20s infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes transicion {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
