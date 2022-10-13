@@ -1,6 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones.aspx.cs" Inherits="GesPresta.Prestaciones" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Prestaciones2.aspx.cs" Inherits="GesPresta.Prestaciones2" %>
 
 <%@ Register src="Cabecera.ascx" tagname="Cabecera" tagprefix="uc1" %>
+
+<%@ Register src="prestacionesBuscar.ascx" tagname="prestacionesBuscar" tagprefix="uc2" %>
 
 <!DOCTYPE html>
 
@@ -17,13 +19,15 @@
               <div class="fila">
                 <div class="col">Código Prectación </div>
                 <div class="col2"><asp:TextBox ID="txtCodPre" runat="server"></asp:TextBox>
+                    <asp:Button ID="btnVerPrestaciones" runat="server" CausesValidation="False" Text="Ver prestaciones" OnClick="btnVerPrestaciones_Click" />
+&nbsp;&nbsp;&nbsp;
                     <asp:RequiredFieldValidator ID="rqdtxtCodPre" runat="server" ControlToValidate="txtCodPre" ErrorMessage="El codigo de prestacion es obligatorio" ForeColor="#FF9999"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="regtxtCodpre" runat="server" ControlToValidate="txtCodPre" ErrorMessage="El formato de los datos a introducir debe ser: 3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos. " ForeColor="#66FF99" ValidationExpression="\d{3}-\d{3}-\d{3}"></asp:RegularExpressionValidator>
                   </div>
               </div>
               <div class="fila">
                 <div class="col">Descrpcion </div>
-                <div class="col2"><asp:TextBox ID="txtDespre" runat="server"></asp:TextBox></div>
+                <div class="col2"><asp:TextBox ID="txtDesPre" runat="server"></asp:TextBox></div>
               </div>
               <div class="fila">
                 <div class="col">Importe Fijo </div>
@@ -57,6 +61,12 @@
                  <div class="col2"><asp:Button ID="cmdEnviar" runat="server" Text="Enviar" /></div>
                 </div>
          </div>
+            <uc2:prestacionesBuscar ID="prestacionesBuscar1" runat="server" visible="false" />
+            <p>
+            <asp:Button ID="btnSeleccionar" runat="server" style="margin-bottom: 0px; margin-left: 378px;" Text="Seleccionar" CausesValidation="False" Visible="False" OnClick="btnSeleccionar_Click" />
+            </p>
+        
+
         </form>
 </body>
 </html>

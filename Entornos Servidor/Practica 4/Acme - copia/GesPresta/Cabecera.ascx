@@ -2,11 +2,11 @@
 <link href="HojaEstilo.css" rel="stylesheet" />
 <div class="Cabezera">
 <div id="link">
-    <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Default.aspx">Inicio</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Default.aspx" CausesValidation="False">Inicio</asp:LinkButton>
     &nbsp;&nbsp;&nbsp;
-    <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Empleados.aspx">Empleados</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Empleados.aspx" CausesValidation="False">Empleados</asp:LinkButton>
     &nbsp;&nbsp;&nbsp;
-    <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Prestaciones.aspx">Prestaciones</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Prestaciones.aspx" CausesValidation="False">Prestaciones</asp:LinkButton>
 </div>
 
 <div class="Titulo">

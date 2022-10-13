@@ -11,7 +11,7 @@ namespace GesPresta
 {
 
 
-    public partial class Prestaciones
+    public partial class Prestaciones2
     {
 
         /// <summary>
@@ -42,6 +42,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtCodPre;
 
         /// <summary>
+        /// Control btnVerPrestaciones.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVerPrestaciones;
+
+        /// <summary>
         /// Control rqdtxtCodPre.
         /// </summary>
         /// <remarks>
@@ -60,13 +69,13 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtCodpre;
 
         /// <summary>
-        /// Control txtDespre.
+        /// Control txtDesPre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDespre;
+        protected global::System.Web.UI.WebControls.TextBox txtDesPre;
 
         /// <summary>
         /// Control txtImpPre.
@@ -139,5 +148,23 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button cmdEnviar;
+
+        /// <summary>
+        /// Control prestacionesBuscar1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::GesPresta.prestacionesBuscar prestacionesBuscar1;
+
+        /// <summary>
+        /// Control btnSeleccionar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSeleccionar;
     }
 }
