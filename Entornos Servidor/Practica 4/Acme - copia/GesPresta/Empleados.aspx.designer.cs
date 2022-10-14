@@ -141,15 +141,6 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdtxtTelEmp;
 
         /// <summary>
-        /// Control regtxtFnaEmp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtFnaEmp;
-
-        /// <summary>
         /// Control txtFnaEmp.
         /// </summary>
         /// <remarks>
@@ -177,13 +168,13 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.CompareValidator cmptxtFnaEmp;
 
         /// <summary>
-        /// Control regtxtFinEmp.
+        /// Control regtxtFnaEmp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtFinEmp;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtFnaEmp;
 
         /// <summary>
         /// Control txtFinEmp.
@@ -202,6 +193,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rqdtxtFinEmp;
+
+        /// <summary>
+        /// Control regtxtFinEmp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtFinEmp;
 
         /// <summary>
         /// Control rblSexEmp.

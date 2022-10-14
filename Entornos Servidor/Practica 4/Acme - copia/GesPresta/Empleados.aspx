@@ -52,7 +52,6 @@ formato de los datos a introducir debe ser: una letra y 5 dígitos. " ForeColor=
                 <div class="col">Teléfonos :</div>
                 <div class="col2"><asp:TextBox ID="txtTelEmp" runat="server" Width="410px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rqdtxtTelEmp" runat="server" ControlToValidate="txtTelEmp" ErrorMessage="El Telefono es obligatorio" ForeColor="#FF9999">*</asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="regtxtFnaEmp" runat="server" ControlToValidate="txtFnaEmp" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa. " ForeColor="#66FF99" ValidationExpression="\d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                   </div>
               </div>
               <div class="fila">
@@ -60,7 +59,7 @@ formato de los datos a introducir debe ser: una letra y 5 dígitos. " ForeColor=
                 <div class="col2"><asp:TextBox ID="txtFnaEmp" runat="server" Width="275px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rqdtxtFnaEmp" runat="server" ControlToValidate="txtFnaEmp" ErrorMessage="La Fecha de Nacimiento es obligatoria" ForeColor="#FF9999">*</asp:RequiredFieldValidator>
                   &nbsp;<asp:CompareValidator ID="cmptxtFnaEmp" runat="server" ControlToCompare="txtFinEmp" ControlToValidate="txtFnaEmp" ErrorMessage="La Fecha de Ingreso del Empleado debe ser mayor que la Fecha de Nacimiento" ForeColor="#FF9999" Operator="LessThan" Type="Date">*</asp:CompareValidator>
-                    <asp:RegularExpressionValidator ID="regtxtFinEmp" runat="server" ControlToValidate="txtFinEmp" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa. " ForeColor="#66FF99" ValidationExpression="\d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="regtxtFnaEmp" runat="server" ControlToValidate="txtFnaEmp" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa. " ForeColor="#66FF99" ValidationExpression="\d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                   </div>
               </div>
               <div class="fila">
@@ -68,6 +67,7 @@ formato de los datos a introducir debe ser: una letra y 5 dígitos. " ForeColor=
                 <div class="col2"><asp:TextBox ID="txtFinEmp" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rqdtxtFinEmp" runat="server" ControlToValidate="txtFinEmp" ErrorMessage="La Fecha de Ingreso es obligatoria" ForeColor="#FF9999">*</asp:RequiredFieldValidator>
                   &nbsp;&nbsp;&nbsp;
+                    <asp:RegularExpressionValidator ID="regtxtFinEmp" runat="server" ControlToValidate="txtFinEmp" ErrorMessage="El formato de los datos a introducir debe ser:  Formato de fecha dd/mm/aaaa. " ForeColor="#66FF99" ValidationExpression="\d\d\/\d\d\/\d\d\d\d"></asp:RegularExpressionValidator>
                   </div>
               </div>
               <div class="fila">
