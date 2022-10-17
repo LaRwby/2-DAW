@@ -13,7 +13,7 @@
         <div>
           <link href="HojaEstilo.css" rel="stylesheet" />
         <div class="Cabezera">
-        <div id="link">
+            <div id="link">
             <asp:LinkButton ID="LinkButton10" runat="server" PostBackUrl="~/MPDefault.aspx" CausesValidation="False">Inicio</asp:LinkButton>
                 &nbsp;&nbsp;&nbsp;
             <asp:LinkButton ID="LinkButton11" runat="server" PostBackUrl="~/MPEmpleados.aspx" CausesValidation="False">Empleados</asp:LinkButton>
