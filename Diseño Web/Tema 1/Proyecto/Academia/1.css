@@ -1,0 +1,77 @@
+footer{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: auto;
+}
+.media, .iconos{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+}
+
+.iconos{
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	border:1px solid white;
+	margin: 1rem;
+}
+.iconos:hover{
+	background-color: #111;
+	filter: invert(1);
+}
+
+.items{
+	list-style-type: none;
+	color: white;
+	font-size: 18px;
+}
+.item{
+	margin: ;
+	cursor: pointer;
+	opacity: 0.6;
+}
+.item:hover{
+	opacity: 1;
+}
+.copy{
+	color: white;
+	opacity: 0.3;
+	text-align: center;
+}
+
+
+
+
+
+
+
+<footer class="alineacion">
+		<div class="final"><img src="Imagenes/logofooter.png"></div>
+		<div class="words">
+			<ul>
+				<li><a href=>Inicio</a></li>
+				<li><a href=>Aviso legal</a></li>
+				<li><a href=>Contacto</a></li>
+			</ul>
+		</div>
+		<div class="list">
+			<div class="media">
+			  <a href="" class="iconos"><img src="Imagenes/face.png" width="25px" height="25px"></a>
+			  <a href="" class="iconos"><img src="Imagenes/tw.png" width="25px" height="25px"></a>
+			  <a href="" class="iconos"><img src="Imagenes/ln.png" width="25px" height="25px"></a>
+			  <a href="" class="iconos"><img src="Imagenes/insta.png" width="25px" height="25px"></a>
+			  </div>
+		</div>
+		<span class="copy">&copy;2022, Lockser AC</span></div>
+	</footer>
