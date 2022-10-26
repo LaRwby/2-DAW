@@ -175,7 +175,12 @@ nav a:hover:after{
 	}
 }
 
+.titulo{
+
+}	
+.cuerpo{
 	
+}
 
 
 
@@ -217,9 +222,6 @@ nav a:hover:after{
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
-
-
-
 
 .footer{
 	padding: 10px 0;
