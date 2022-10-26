@@ -24,13 +24,13 @@ namespace GesTienda
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// Control grpTipos.
+        /// Control grdTipos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grpTipos;
+        protected global::System.Web.UI.WebControls.GridView grdTipos;
 
         /// <summary>
         /// Control SqlDataSource2.
@@ -42,12 +42,12 @@ namespace GesTienda
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
-        /// Control grpProductos.
+        /// Control gdrProductos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grpProductos;
+        protected global::System.Web.UI.WebControls.GridView gdrProductos;
     }
 }
