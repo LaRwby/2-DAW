@@ -3,7 +3,7 @@ body{
 	margin: 0;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-image:  url("../Imagenes/bb.png");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 header{
 	display: flex;
@@ -175,59 +175,39 @@ nav a:hover:after{
 		transition-delay: 0s;
 	}
 }
+.text{
+    text-align: right;
+    width: 49%;
+    margin-bottom:15px ;
+    float: left;
+    color: #000000;
+   }
+.forms{
+    text-align: left;
+    width: 50%;
+    margin-bottom:15px ;
+    float: right;
+}
+.contenido{
+    height: 25px;
+}
+.espaces{
+   margin-right: 35px;
+}
+.contenedor{
+   color: #000000;
+   padding-top: 50px;
+   padding-bottom: 7%;
+   font-size: 20px;
+}
+.form2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
 
-.titulo{
-	text-align: center;
-	font-size: 20px;
-	font-family: 'Josefin Sans', sans-serif;
-}	
-hr{
-	align-items: center;
-	border: 1px solid #000000;
-}
-.hr1{
-	width: 250px;
-}
-.hr2{
-	width: 400px;
-}
-.hr3{
-	width: 750px
-}
-.cuerpo{
-	font-family: 'Poppins', sans-serif;
-	text-align: justify;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-bottom: 5%;
-}
 
 
-
-
-
-
-.slider{
-	width: 55%;
-	margin: auto;
-	overflow: hidden;
-}
-.slider ul{
-	padding: 0;
-	display: flex;
-	width: 400%;
-
-	animation: transicion 20s infinite;
-	animation-timing-function: linear;
-	animation-direction: alternate;
-}
-.slider li{
-	width: 100%;
-	list-style: none;
-}
-.slider img{
-	width: 100%;
-}
 
 @keyframes transicion {
 	0% {margin-left: 0;}
