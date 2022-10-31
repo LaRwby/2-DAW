@@ -3,7 +3,7 @@
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 	font-family: 'Poppins', sans-serif;
 - Tamaño letra
-	menu  20px- 15 - 10px
+	menu  20px
 	titulos 22px
 	textos 16px
 	botones 20px
