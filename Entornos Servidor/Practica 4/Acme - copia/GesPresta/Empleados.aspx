@@ -92,7 +92,7 @@ formato de los datos a introducir debe ser: una letra y 5 dígitos. " ForeColor=
                 </div>
                 <div class="fila">
                  <div class="col"></div>  
-                 <div class="col2"><asp:Button ID="cmdEnviar" runat="server" Text="Enviar" /></div>
+                 <div class="col2"><asp:Button ID="cmdEnviar" runat="server" Text="Enviar" OnClick="cmdEnviar_Click" /></div>
                 </div>
             </div>
 

@@ -76,3 +76,11 @@
 .verticalMitad {
     vertical-align: middle;
 }
+
+.auto-style1 {
+    height: 28px;
+}
+
+.auto-style2 {
+    margin-left: 0px;
+}
