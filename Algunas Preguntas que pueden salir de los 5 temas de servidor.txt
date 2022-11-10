@@ -1,0 +1,32 @@
+2 Preguntas de teoria a desarrollar (4 puntos)
+16 preguntas cortas (0.25 puntos) (4 puntos)
+1 ejercicio de una tabla sacar el codigo de Insertar,Actualizar y Borrar los registros de la tabla (2 puntos)
+
+que sigifica Runat="server"
+
+Explica la arquitectura de software de una aplicacion web (Desarrollar)
+Proceso de ddesarrollo de una pagina web (Desarrollar)
+
+Explica la dinamica del funcionamiento del servicio web
+
+Tema 1
+La Clasificacion funcional de las aplicaciones web 
+	- Estaticas 
+	- Dinamicas
+	- Interactivas
+Que es la tecnologia de codigo subyacente
+En que se basa el desarrollo web de aplicaciones web interactiva
+Metodo de envio de la informacion contenida en los campos de un formulario web
+Aspectos basicos de la tecnologia de desarrollo asp.net
+Formato que tienen los archivos de codigo subyacente (aspx.cs)
+Que caracteristicas basicas tiene un pagina web de asp.net
+Diferencia entre los controles de servidor de web asp.net y los estaticos de html
+
+Tema 3 (Ejercicios)
+Hacer que una caja de texto sea la que se active por defecto (page_load focus)
+Variables de Sesion
+Como desactivas el Jquery
+Validacion intrusiva
+Que hace el Trace="True" (activa el seguimiento del trazo de la pagina web)
+En que archivos añadiriamos para el seguimiento de la aplicacion el Trace="Enable" True
+Que hace el PageOutput="True"

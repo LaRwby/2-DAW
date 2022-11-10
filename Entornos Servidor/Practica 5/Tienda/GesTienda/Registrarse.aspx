@@ -69,8 +69,11 @@
                  <div class="col"></div>  
                  <div class="col2"><asp:Button ID="btnInsertar" runat="server" Text="Insertar" OnClick="btnInsertar_Click"/></div>
                </div>
+               <div class="fila">
+                 <div class="col"></div>  
+                 <div class="col2"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Ir a Inicio</asp:HyperLink></div>
+               </div>
         </div>
-        <asp:HyperLink ID="HyperLink1" runat="server">Ir a Inicio</asp:HyperLink>
         <asp:Label ID="lblMensajes" runat="server"></asp:Label>
     </form>
 </body>
