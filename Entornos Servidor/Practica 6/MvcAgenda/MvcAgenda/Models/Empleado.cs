@@ -10,9 +10,14 @@ namespace MvcAgenda.Models
         public string? Nombre { get; set; }
         [Display(Name = "Fecha de nacimiento")]
         [DataType(DataType.Date)]
-        public DateTime FechaNacimiento { get; set; }
-        [Display(Name = "Departamento")]
+        public DateTime? FechaNacimiento { get; set; }
+        [Display(Name = "Teléfono")]
+        public string? Telefono { get; set; }
+        [Display(Name = "Correo electrónico")]
+        [EmailAddress(ErrorMessage = "Dirección de correo electrónico invalida")]
+        public string? Email { get; set; }
         public int DepartamentoId { get; set; }
+       
         public Departamento? Departamento { get; set; }
         public ICollection<Tarea>? Tareas { get; set; }
     }
