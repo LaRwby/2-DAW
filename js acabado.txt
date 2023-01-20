@@ -1,4 +1,0 @@
-let borrarEtiquetas = new BorrarEtiquetasHandle();
-        borrarEtiquetas.gasto = gasto;
-        borrarEtiquetas.etiquetas = etiqueta;
-        spanEtiqueta.addEventListener('click',borrarEtiquetas);

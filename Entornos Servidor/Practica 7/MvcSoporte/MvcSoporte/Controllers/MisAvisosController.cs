@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcSoporte.Data;
 using MvcSoporte.Models;
-using System.Data;
 
 namespace MvcSoporte.Controllers
 {
@@ -12,6 +16,12 @@ namespace MvcSoporte.Controllers
     public class MisAvisosController : Controller
     {
         private readonly MvcSoporteContexto _context;
+
+        public MisAvisosController(MvcSoporteContexto context)
+        {
+            _context = context;
+        }
+
         // GET: MisAvisos
         public async Task<IActionResult> Index()
         {
@@ -33,6 +43,41 @@ namespace MvcSoporte.Controllers
             // .Include(a => a.Equipo).Include(a => a.TipoAveria);
             // return View(await mvcSoporteContexto.ToListAsync());
         }
+
+        // GET: MisAvisos/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Avisos == null)
+            {
+                return NotFound();
+            }
+
+            var aviso = await _context.Avisos
+                .Include(a => a.Empleado)
+                .Include(a => a.Equipo)
+                .Include(a => a.TipoAveria)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (aviso == null)
+            {
+                return NotFound();
+            }
+            // Para evitar el acceso a los avisos de otros empleados
+            var emailUsuario = User.Identity.Name;
+            var empleado = await _context.Empleados
+            .Where(e => e.Email == emailUsuario)
+            .FirstOrDefaultAsync();
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            if (aviso.EmpleadoId != empleado.Id)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(aviso);
+        }
+
         // GET: MisAvisos/Create
         public IActionResult Create()
         {
@@ -71,8 +116,7 @@ namespace MvcSoporte.Controllers
             return View(aviso);
         }
 
-
-        // GET: Avisos/Edit/5
+        // GET: MisAvisos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Avisos == null)
@@ -85,13 +129,27 @@ namespace MvcSoporte.Controllers
             {
                 return NotFound();
             }
+            // Para evitar el acceso a los avisos de otros empleados
+            var emailUsuario = User.Identity.Name;
+            var empleado = await _context.Empleados
+            .Where(e => e.Email == emailUsuario)
+            .FirstOrDefaultAsync();
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            if (aviso.EmpleadoId != empleado.Id)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
             ViewData["EmpleadoId"] = new SelectList(_context.Empleados, "Id", "Nombre", aviso.EmpleadoId);
             ViewData["EquipoId"] = new SelectList(_context.Equipos, "Id", "CodigoEquipo", aviso.EquipoId);
             ViewData["TipoAveriaId"] = new SelectList(_context.TipoAverias, "Id", "Descripcion", aviso.TipoAveriaId);
             return View(aviso);
         }
 
-        // POST: Avisos/Edit/5
+        // POST: MisAvisos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -128,11 +186,76 @@ namespace MvcSoporte.Controllers
             ViewData["TipoAveriaId"] = new SelectList(_context.TipoAverias, "Id", "Descripcion", aviso.TipoAveriaId);
             return View(aviso);
         }
-        private bool AvisoExists(int id)
+
+        // GET: MisAvisos/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            return _context.Avisos.Any(e => e.Id == id);
+            if (id == null || _context.Avisos == null)
+            {
+                return NotFound();
+            }
+
+            var aviso = await _context.Avisos
+                .Include(a => a.Empleado)
+                .Include(a => a.Equipo)
+                .Include(a => a.TipoAveria)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (aviso == null)
+            {
+                return NotFound();
+            }
+            // Para evitar el acceso a los avisos de otros empleados
+            var emailUsuario = User.Identity.Name;
+            var empleado = await _context.Empleados
+            .Where(e => e.Email == emailUsuario)
+            .FirstOrDefaultAsync();
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            if (aviso.EmpleadoId != empleado.Id)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(aviso);
         }
 
-    }
+        // POST: MisAvisos/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Avisos == null)
+            {
+                return Problem("Entity set 'MvcSoporteContexto.Avisos'  is null.");
+            }
+            var aviso = await _context.Avisos.FindAsync(id);
+            if (aviso != null)
+            {
+                _context.Avisos.Remove(aviso);
+            }
+            // Para evitar el acceso a los avisos de otros empleados
+            var emailUsuario = User.Identity.Name;
+            var empleado = await _context.Empleados
+            .Where(e => e.Email == emailUsuario)
+            .FirstOrDefaultAsync();
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            if (aviso.EmpleadoId != empleado.Id)
+            {
+                return RedirectToAction(nameof(Index));
+            }
 
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool AvisoExists(int id)
+        {
+          return _context.Avisos.Any(e => e.Id == id);
+        }
+    }
 }
