@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Lockser.Model.Producto>
+
+@{
+    ViewData["Title"] = "Escaparate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Escaparate</h1>
+<h4>@ViewBag.DescripcionCategoria</h4>
+   <div class="container-fluid">
+     <div class="row">
+         <div class="col-lg-3 col-md-12 col-sm-12"> 
+             <table class="table">
+                 @foreach(var i in ViewData["ListaCategorias"] as IEnumerable<Categoria>)
+                     {
+                         <tr>
+                             <td>
+                                 <a asp-action="Index" asp-route-id="@i.Id">@i.Descripcion.ToString()</a>
+                             </td>
+                         </tr>
+                     }
+             </table>
+         </div>
+     </div>
+     <div class="col-lg-9 col-md-12 col-sm12">
+         <div class="card-columns">
+               @foreach(var item in Model)
+               {
+                   <div class="card" style="width.240px; height: 450px; text-aling-center; margin:10px">
+                       <div>
+                        @{
+                            var nombreImagen = "imagen-no-disponible.jpg"
+                                if (item.Imagen != null)
+                                {
+                                    nombreImagen = item.Imagen;   
+                                }
+                       }
+                       <img class="card-img-top" style="width:150px; height:150px; margin: 10px;" src="~/imagenes/@nombreImagen">
+                       </div>
+                       <div class="">
+                        
+                       </div>
+                   </div>
+               }
+         </div>
+     </div>
+
+
+
+
+   </div> 

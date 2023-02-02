@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZdLUcWoRHrD+5lRbSDoWtlqUNo46fK3myApZLL0P9Lw=",
+  "Hash": "QDKtYWMXYcvbcVJEX7mYgasL2G8akvxZekHdCgksIEk=",
   "Source": "Lockser",
   "BasePath": "_content/Lockser",
   "Mode": "Default",
@@ -1105,12 +1105,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\13.jpeg",
+      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\16.png",
       "SourceId": "Lockser",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\",
       "BasePath": "_content/Lockser",
-      "RelativePath": "imagenes/13.jpeg",
+      "RelativePath": "imagenes/16.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1119,15 +1119,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\13.jpeg"
+      "OriginalItemSpec": "wwwroot\\imagenes\\16.png"
     },
     {
-      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\2.png",
+      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\17.jpg",
       "SourceId": "Lockser",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\",
       "BasePath": "_content/Lockser",
-      "RelativePath": "imagenes/2.png",
+      "RelativePath": "imagenes/17.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,15 +1136,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\2.png"
+      "OriginalItemSpec": "wwwroot\\imagenes\\17.jpg"
     },
     {
-      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\sage.jpeg",
+      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\17.png",
       "SourceId": "Lockser",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\",
       "BasePath": "_content/Lockser",
-      "RelativePath": "imagenes/sage.jpeg",
+      "RelativePath": "imagenes/17.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1153,7 +1153,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagenes\\sage.jpeg"
+      "OriginalItemSpec": "wwwroot\\imagenes\\17.png"
+    },
+    {
+      "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\imagenes\\sage.jpg",
+      "SourceId": "Lockser",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\",
+      "BasePath": "_content/Lockser",
+      "RelativePath": "imagenes/sage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\sage.jpg"
     },
     {
       "Identity": "C:\\Users\\joeortros\\Desktop\\2-DAW\\Entornos Servidor\\Proyecto\\Lockser\\Lockser\\wwwroot\\js\\site.js",

@@ -30,12 +30,12 @@ namespace Lockser
         {
             // Comprobar si existe el administrador predetermindado
             var testAdmin = userManager.Users
-            .Where(x => x.UserName == "admin123")
+            .Where(x => x.UserName == "admin@gmail.com")
             .SingleOrDefault();
             if (testAdmin != null) return;
             testAdmin = new IdentityUser
             {
-                UserName = "admin123",
+                UserName = "admin@gmail.com",
                 Email = "admin@gmail.com"
             };
             string admPasswd = "Admin123";
