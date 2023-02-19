@@ -1,0 +1,22 @@
+Jefe Morado:
+
+	- Entrar en las areas MORADAS
+Jefe Azul 
+
+	- Posiciones desde el principio 
+	- 50 barras 
+		- Portales 	Blanco/Azul----------Rojo/Verde
+			Rojo/Verde ---------Blaco/Azul 
+		- Orden Colores de las bolas 
+			Rojo -> Azul -> Verde -> Blanco -> Negro x2 
+			Cada 3 segundos 
+	- 36 barras 
+		- sumision (nades Torbellino)
+		- posiciones con el color 
+		- cojer orbes de color (normalmente direccion agujas del relog)
+
+	- Area del jefe azul 
+
+En 30 barras se cambia de lado 
+	- 25 barras circulos negros ( entrar en el blanco )
+	- 13 barras posiciones y coger bolas de tu color (azul o negro)
